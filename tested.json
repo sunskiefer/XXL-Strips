@@ -1,0 +1,26 @@
+[
+ {
+  "id": "xxl-strip",
+  "version": "0.1.1",
+  "device": "Akai Force",
+  "date": "2026-11-14"
+ },
+ {
+  "id": "xxl-strip-bus",
+  "version": "0.1.1",
+  "device": "Akai Force",
+  "date": "2026-11-14"
+ },
+ {
+  "id": "xxl-strip-master",
+  "version": "0.1.1",
+  "device": "Akai Force",
+  "date": "2026-11-14"
+ },
+ {
+  "id": "xxl-pro",
+  "version": "0.1.0",
+  "device": "Akai Force",
+  "date": "2026-11-14"
+ }
+]
