@@ -1,0 +1,36 @@
+# Publishes the GitHub releases of the XXL set from the release zips in releases/ (the same files that were built and
+# tested as ARM code). Runs when releases/ changes on main, or by hand. One release per plugin.
+name: release
+on:
+  push:
+    branches: [main]
+    paths: ["releases/**", ".github/workflows/release.yml"]
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  publish:
+    runs-on: ubuntu-24.04
+    strategy:
+      fail-fast: false
+      max-parallel: 1
+      matrix:
+        include:
+          - { file: "XXL-STRIP-0.1.1-mpc-armv7.zip", tag: "xxl-strip-v0.1.1", name: "XXL STRIP 0.1.1", latest: "false" }
+          - { file: "XXL-STRIP-BUS-0.1.1-mpc-armv7.zip", tag: "xxl-strip-bus-v0.1.1", name: "XXL STRIP BUS 0.1.1", latest: "false" }
+          - { file: "XXL-STRIP-MASTER-0.1.1-mpc-armv7.zip", tag: "xxl-strip-master-v0.1.1", name: "XXL STRIP MASTER 0.1.1", latest: "false" }
+          - { file: "XXL-Pro-0.1.0-mpc-armv7.zip", tag: "xxl-pro-v0.1.0", name: "XXL Pro 0.1.0", latest: "true" }
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check the zip against its recorded sum
+        run: cd releases && grep " ${{ matrix.file }}$" SHA256SUMS.txt | sha256sum -c -
+      - name: Publish
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: ${{ matrix.tag }}
+          target_commitish: ${{ github.sha }}
+          name: ${{ matrix.name }}
+          body_path: docs/release-notes.md
+          prerelease: false
+          make_latest: ${{ matrix.latest }}
+          files: releases/${{ matrix.file }}

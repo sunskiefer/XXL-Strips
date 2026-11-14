@@ -12,8 +12,8 @@ The L'Cronx XXL set for Akai Force / MPC OS (ARMv7, VST2). Free. GPL-3.0-or-late
 Each folder is one plugin: its source, tests, art, README, screenshots (`docs/img/`) and its Panel Editor page
 (`<Name>-Panel-Editor.html`: open it in a browser, arrange the panel, export `layout.json` next to `build.sh`).
 
-The release zips (`<Name>-<version>-mpc-armv7.zip`, with `install.sh` / `uninstall.sh`) are in `releases/`, with their
-SHA-256 sums in `releases/SHA256SUMS.txt`.
+The release zips (`<Name>-<version>-mpc-armv7.zip`, with `install.sh` / `uninstall.sh`) are on the Releases page (published from
+`releases/` by `.github/workflows/release.yml`); their SHA-256 sums are in `releases/SHA256SUMS.txt`.
 
 ## Status
 Built and tested as ARM code under an emulator (2026-11-14): XXL Pro 887 checks, XXL STRIP 166, XXL STRIP BUS 89,
