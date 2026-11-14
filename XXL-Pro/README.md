@@ -59,3 +59,5 @@ their programs are ours. The page structure and the patch bay come from PhyXXL.
 
 ## Build (ARM only)
     ./build.sh && QEMU_ARM=/path/to/qemu-arm-static test/run_arm_tests.sh && ./release.sh 0.1.0
+
+Art by SunsKiefer, after the looks of the original panels.

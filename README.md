@@ -50,8 +50,7 @@ Needs Python 3 (numpy, scipy, Pillow, opencv), Zig (`pip install ziglang`) and t
 The three strips share XXL Pro's rendered knob frames: build XXL Pro first, or run `tools/render_knobs.py` in the strip.
 
 ## Art
-Knobs are rendered by `tools/knob_render.py`; keys by `tools/key_render.py` with the same light. Slider caps, tick
-ring and VU face are L'Cronx art (`art/user/`).
+Art by SunsKiefer, after the looks of the original panels.
 
 ## Credits
 XXL STRIP uses code from Dusk Audio (GPL-3.0, `XXL-STRIP/third_party/dusk`). Everything else is L'Cronx code.

@@ -7,3 +7,5 @@ Stages: drive (with density), LF/HF shelving EQ, HF compressor, stereo image (wi
 Build: `./build.sh` (Zig, ARMv7 only). Test: `test/run_arm_tests.sh`. Package: `./release.sh 0.1.1`.
 All DSP is L'Cronx code (src/master_dsp.h, src/strip_dsp.h), written from published descriptions; voicing unverified.
 Wrapper: mpc-vst-plugins. Licence: GPL-3.0-or-later.
+
+Art by SunsKiefer, after the looks of the original panels.

@@ -8,3 +8,5 @@ Build: `./build.sh` (Zig, ARMv7 only). Test: `test/run_arm_tests.sh`. Package: `
 Credits: E Brown / E Black filters and equaliser are Dusk Audio's FourKEQDSP (GPL-3.0-or-later, third_party/dusk).
 Compressor, gate/expander, G-mode equaliser, VU and engine are L'Cronx code. Wrapper: mpc-vst-plugins.
 Licence: GPL-3.0-or-later (required by the Dusk code).
+
+Art by SunsKiefer, after the looks of the original panels.
