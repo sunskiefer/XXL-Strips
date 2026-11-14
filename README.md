@@ -40,7 +40,7 @@ XXL STRIP BUS 89, XXL STRIP MASTER 99.
 
 ## Building
 Needs Python 3 (numpy, scipy, Pillow, opencv), Zig (`pip install ziglang`) and the wrapper
-[`sunskiefer/mpc-vst-plugins`](https://github.com/sunskiefer/mpc-vst-plugins) at commit `d43f0d0` checked out as
+[`sunskiefer/mpc-vst-plugins`](https://github.com/sunskiefer/mpc-vst-plugins) at commit `d43f0d0` (the release zips are packaged with the current `open-mpc/mpc-vst-plugins` release tool) checked out as
 `third_party/mpc-vst-plugins` inside the plugin folder (or `MPC_VST=<path>`). Then, in a plugin folder:
 
     ./build.sh
