@@ -7,6 +7,25 @@ set (XXL STRIP, XXL STRIP BUS, XXL STRIP MASTER, XXL Pro). Free. GPL-3.0-or-late
 |---|---|---|---|
 | XXL-2A, XXL-1B, XXL-16VU, XXL-76, XXL-67, XXL-DISS | XXL-73, XXL-55A, XXL-56, XXL-EQ1-A, XXL-MQ-5 | XXL-A80, XXL-AT12 | XXL-224, XXL-480R |
 
+## What each module is
+| Module | Emulation of |
+|---|---|
+| XXL-2A | LA-2A-style optical tube levelling amplifier |
+| XXL-1B | CL 1B-style optical tube compressor |
+| XXL-16VU | 160 VU-style VCA compressor / limiter |
+| XXL-76 | 1176-style FET limiting amplifier |
+| XXL-67 | 670-style stereo vari-mu tube limiter |
+| XXL-DISS | Distressor-style character compressor |
+| XXL-73 | 1073-style preamp and EQ |
+| XXL-55A | 550A-style 3-band proportional-Q EQ |
+| XXL-56 | 560-style 10-band graphic EQ |
+| XXL-EQ1-A | EQP-1A-style passive program equalizer |
+| XXL-MQ-5 | MEQ-5-style passive mid-range equalizer |
+| XXL-A80 | A80-style multitrack tape machine |
+| XXL-AT12 | ATR-102-style mastering tape recorder |
+| XXL-224 | 224-style digital reverb |
+| XXL-480R | 480L-style digital reverb |
+
 ## How it works
 - **Overview**: a tile per module (tap to open its page) and the PATCH BAY tile. Each tile says whether its module is
   in the signal path.

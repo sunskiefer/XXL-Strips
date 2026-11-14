@@ -4,7 +4,7 @@ name: release
 on:
   push:
     branches: [main]
-    paths: ["releases/**", ".github/workflows/release.yml"]
+    paths: ["releases/**", "docs/notes/**", ".github/workflows/release.yml"]
   workflow_dispatch:
 permissions:
   contents: write
@@ -30,7 +30,7 @@ jobs:
           tag_name: ${{ matrix.tag }}
           target_commitish: ${{ github.sha }}
           name: ${{ matrix.name }}
-          body_path: docs/release-notes.md
+          body_path: docs/notes/${{ matrix.tag }}.md
           prerelease: false
           make_latest: ${{ matrix.latest }}
           files: releases/${{ matrix.file }}
