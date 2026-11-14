@@ -35,8 +35,8 @@ The release zips (`<Name>-<version>-mpc-armv7.zip`, with `install.sh` / `uninsta
 `releases/` by `.github/workflows/release.yml`); their SHA-256 sums are in `releases/SHA256SUMS.txt`.
 
 ## Status
-Built and tested as ARM code under an emulator (2026-11-14): XXL Pro 887 checks, XXL STRIP 166, XXL STRIP BUS 89,
-XXL STRIP MASTER 99, all passing. Not yet verified on a Force.
+Tested and running on an Akai Force (L'Cronx, 2026-11-14). The ARM test suites also pass: XXL Pro 887 checks, XXL STRIP 166,
+XXL STRIP BUS 89, XXL STRIP MASTER 99.
 
 ## Building
 Needs Python 3 (numpy, scipy, Pillow, opencv), Zig (`pip install ziglang`) and the wrapper

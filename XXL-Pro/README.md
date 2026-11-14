@@ -48,8 +48,8 @@ The two reverbs are our own designs tuned to outside behaviour (decay times per 
 their programs are ours. The page structure and the patch bay come from PhyXXL.
 
 ## Not done yet / not verified
-- Nothing has run on a real Force: CPU load, touch, Q-Links and the guard are untested on the device. The module
-  costs in `tools/spec.py` are placeholders until a bench run (all fifteen in series cost 85 of 100 today).
+- Tested and running on an Akai Force (L'Cronx, 2026-11-14). The module costs in `tools/spec.py` are still estimates,
+  not bench figures (all fifteen in series cost 85 of 100 today).
 - First functional skin: no panel art, tiles or final control placement yet.
 - XXL-480R carries 16 of our own programs and 13 controls; the delay and effect programs are left out.
 - XXL-AT12's saturation follows its targets only roughly; tape low-end compression, crosstalk and operating level

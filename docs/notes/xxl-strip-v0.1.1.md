@@ -2,5 +2,5 @@
 
 For Akai Force / MPC OS (ARMv7). Unzip and run `install.sh` on the device; `uninstall.sh` removes it. Free.
 
-Tested as ARM code under an emulator on 2026-11-14 (all checks passing); not yet verified on a Force.
+Tested and running on an Akai Force (L'Cronx, 2026-11-14).
 SHA-256 sums: `releases/SHA256SUMS.txt` in the repository.
