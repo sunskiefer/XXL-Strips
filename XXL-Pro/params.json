@@ -1,0 +1,5591 @@
+{
+ "name": "XXL Pro",
+ "params": [
+  {
+   "key": "out_level",
+   "name": "Output",
+   "min": -24.0,
+   "max": 12.0,
+   "default": 0.0,
+   "dynamic_display": true,
+   "unit": "dB"
+  },
+  {
+   "key": "m2a_peak",
+   "name": "Peak Red",
+   "min": 0.0,
+   "max": 100.0,
+   "default": 30.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m2a_gain",
+   "name": "Gain",
+   "min": 0.0,
+   "max": 100.0,
+   "default": 40.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m2a_mode",
+   "name": "Limit",
+   "options": [
+    "Compress",
+    "Limit"
+   ],
+   "default": 0
+  },
+  {
+   "key": "m2a_emph",
+   "name": "SC Emph",
+   "min": 0.0,
+   "max": 100.0,
+   "default": 0.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m2a_link",
+   "name": "Linked",
+   "options": [
+    "Dual",
+    "Linked"
+   ],
+   "default": 1
+  },
+  {
+   "key": "m1b_thr",
+   "name": "Thresh",
+   "min": -40.0,
+   "max": 20.0,
+   "default": 20.0,
+   "dynamic_display": true,
+   "unit": "dBu"
+  },
+  {
+   "key": "m1b_gain",
+   "name": "Gain",
+   "min": 0.0,
+   "max": 30.0,
+   "default": 0.0,
+   "dynamic_display": true,
+   "unit": "dB"
+  },
+  {
+   "key": "m1b_ratio",
+   "name": "Ratio",
+   "min": 2.0,
+   "max": 10.0,
+   "default": 4.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m1b_time",
+   "name": "Timing",
+   "min": 0.0,
+   "max": 2.0,
+   "default": 0.0,
+   "dynamic_display": true,
+   "display": "int"
+  },
+  {
+   "key": "m1b_att",
+   "name": "Attack",
+   "min": 0.0,
+   "max": 10.0,
+   "default": 5.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m1b_rel",
+   "name": "Release",
+   "min": 0.0,
+   "max": 10.0,
+   "default": 5.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m1b_link",
+   "name": "Linked",
+   "options": [
+    "Dual",
+    "Linked"
+   ],
+   "default": 1
+  },
+  {
+   "key": "m16_thr",
+   "name": "Thresh",
+   "min": 0.0,
+   "max": 100.0,
+   "default": 100.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m16_ratio",
+   "name": "Ratio",
+   "min": 0.0,
+   "max": 100.0,
+   "default": 40.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m16_out",
+   "name": "Output",
+   "min": -20.0,
+   "max": 20.0,
+   "default": 0.0,
+   "dynamic_display": true,
+   "unit": "dB"
+  },
+  {
+   "key": "m16_link",
+   "name": "Linked",
+   "options": [
+    "Dual",
+    "Linked"
+   ],
+   "default": 1
+  },
+  {
+   "key": "m76_in",
+   "name": "Input",
+   "min": 0.0,
+   "max": 100.0,
+   "default": 24.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m76_out",
+   "name": "Output",
+   "min": 0.0,
+   "max": 100.0,
+   "default": 50.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m76_att",
+   "name": "Attack",
+   "min": 1.0,
+   "max": 7.0,
+   "default": 3.0,
+   "dynamic_display": true,
+   "display": "int"
+  },
+  {
+   "key": "m76_rel",
+   "name": "Release",
+   "min": 1.0,
+   "max": 7.0,
+   "default": 5.0,
+   "dynamic_display": true,
+   "display": "int"
+  },
+  {
+   "key": "m76_ratio",
+   "name": "Ratio",
+   "min": 0.0,
+   "max": 5.0,
+   "default": 1.0,
+   "dynamic_display": true,
+   "display": "int"
+  },
+  {
+   "key": "m76_rev",
+   "name": "Rev B",
+   "options": [
+    "Rev A",
+    "Rev B"
+   ],
+   "default": 0
+  },
+  {
+   "key": "m76_link",
+   "name": "Linked",
+   "options": [
+    "Dual",
+    "Linked"
+   ],
+   "default": 1
+  },
+  {
+   "key": "m67_in",
+   "name": "In Gain",
+   "min": -10.8,
+   "max": 9.2,
+   "default": 0.0,
+   "dynamic_display": true,
+   "unit": "dB"
+  },
+  {
+   "key": "m67_thr",
+   "name": "Thresh",
+   "min": 0.0,
+   "max": 100.0,
+   "default": 0.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m67_tc",
+   "name": "Time Con",
+   "min": 1.0,
+   "max": 6.0,
+   "default": 2.0,
+   "dynamic_display": true,
+   "display": "int"
+  },
+  {
+   "key": "m67_out",
+   "name": "Out Gain",
+   "min": -12.0,
+   "max": 12.0,
+   "default": 0.0,
+   "dynamic_display": true,
+   "unit": "dB"
+  },
+  {
+   "key": "m67_ms",
+   "name": "Lat-Vert",
+   "options": [
+    "Left-Right",
+    "Lat-Vert"
+   ],
+   "default": 0
+  },
+  {
+   "key": "m67_link",
+   "name": "Linked",
+   "options": [
+    "Dual",
+    "Linked"
+   ],
+   "default": 1
+  },
+  {
+   "key": "mds_in",
+   "name": "Input",
+   "min": 0.0,
+   "max": 10.5,
+   "default": 5.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "mds_att",
+   "name": "Attack",
+   "min": 0.0,
+   "max": 10.5,
+   "default": 5.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "mds_rel",
+   "name": "Release",
+   "min": 0.0,
+   "max": 10.5,
+   "default": 5.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "mds_out",
+   "name": "Output",
+   "min": 0.0,
+   "max": 10.5,
+   "default": 5.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "mds_ratio",
+   "name": "Ratio",
+   "min": 0.0,
+   "max": 7.0,
+   "default": 0.0,
+   "dynamic_display": true,
+   "display": "int"
+  },
+  {
+   "key": "mds_det",
+   "name": "Detector",
+   "min": 0.0,
+   "max": 2.0,
+   "default": 0.0,
+   "dynamic_display": true,
+   "display": "int"
+  },
+  {
+   "key": "mds_aud",
+   "name": "Audio",
+   "min": 0.0,
+   "max": 3.0,
+   "default": 0.0,
+   "dynamic_display": true,
+   "display": "int"
+  },
+  {
+   "key": "mds_link",
+   "name": "Linked",
+   "options": [
+    "Dual",
+    "Linked"
+   ],
+   "default": 1
+  },
+  {
+   "key": "m73_gain",
+   "name": "Gain",
+   "min": -10.0,
+   "max": 30.0,
+   "default": 0.0,
+   "dynamic_display": true,
+   "unit": "dB"
+  },
+  {
+   "key": "m73_out",
+   "name": "Output",
+   "min": -30.0,
+   "max": 10.0,
+   "default": 0.0,
+   "dynamic_display": true,
+   "unit": "dB"
+  },
+  {
+   "key": "m73_hpf",
+   "name": "Hi-Pass",
+   "min": 0.0,
+   "max": 4.0,
+   "default": 0.0,
+   "dynamic_display": true,
+   "display": "int"
+  },
+  {
+   "key": "m73_lf",
+   "name": "Low Frq",
+   "min": 0.0,
+   "max": 4.0,
+   "default": 0.0,
+   "dynamic_display": true,
+   "display": "int"
+  },
+  {
+   "key": "m73_lg",
+   "name": "Low",
+   "min": -16.0,
+   "max": 16.0,
+   "default": 0.0,
+   "dynamic_display": true,
+   "unit": "dB"
+  },
+  {
+   "key": "m73_mf",
+   "name": "Mid Frq",
+   "min": 0.0,
+   "max": 6.0,
+   "default": 0.0,
+   "dynamic_display": true,
+   "display": "int"
+  },
+  {
+   "key": "m73_mg",
+   "name": "Mid",
+   "min": -18.0,
+   "max": 18.0,
+   "default": 0.0,
+   "dynamic_display": true,
+   "unit": "dB"
+  },
+  {
+   "key": "m73_hg",
+   "name": "High",
+   "min": -18.0,
+   "max": 18.0,
+   "default": 0.0,
+   "dynamic_display": true,
+   "unit": "dB"
+  },
+  {
+   "key": "m73_eq",
+   "name": "EQ In",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 1
+  },
+  {
+   "key": "m73_ph",
+   "name": "Phase",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0
+  },
+  {
+   "key": "m55_lf",
+   "name": "Low Frq",
+   "min": 0.0,
+   "max": 4.0,
+   "default": 1.0,
+   "dynamic_display": true,
+   "display": "int"
+  },
+  {
+   "key": "m55_lg",
+   "name": "Low",
+   "min": 0.0,
+   "max": 10.0,
+   "default": 5.0,
+   "dynamic_display": true,
+   "display": "int"
+  },
+  {
+   "key": "m55_lb",
+   "name": "Low Bell",
+   "options": [
+    "Shelf",
+    "Bell"
+   ],
+   "default": 0
+  },
+  {
+   "key": "m55_mf",
+   "name": "Mid Frq",
+   "min": 0.0,
+   "max": 4.0,
+   "default": 2.0,
+   "dynamic_display": true,
+   "display": "int"
+  },
+  {
+   "key": "m55_mg",
+   "name": "Mid",
+   "min": 0.0,
+   "max": 10.0,
+   "default": 5.0,
+   "dynamic_display": true,
+   "display": "int"
+  },
+  {
+   "key": "m55_hf",
+   "name": "High Frq",
+   "min": 0.0,
+   "max": 4.0,
+   "default": 2.0,
+   "dynamic_display": true,
+   "display": "int"
+  },
+  {
+   "key": "m55_hg",
+   "name": "High",
+   "min": 0.0,
+   "max": 10.0,
+   "default": 5.0,
+   "dynamic_display": true,
+   "display": "int"
+  },
+  {
+   "key": "m55_hb",
+   "name": "High Bell",
+   "options": [
+    "Shelf",
+    "Bell"
+   ],
+   "default": 0
+  },
+  {
+   "key": "m55_flt",
+   "name": "Filter",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0
+  },
+  {
+   "key": "m55_eq",
+   "name": "EQ In",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 1
+  },
+  {
+   "key": "m55_ph",
+   "name": "Phase",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0
+  },
+  {
+   "key": "m55_out",
+   "name": "Output",
+   "min": -24.0,
+   "max": 12.0,
+   "default": 0.0,
+   "dynamic_display": true,
+   "unit": "dB"
+  },
+  {
+   "key": "m56_b1",
+   "name": "31 Hz",
+   "min": -12.0,
+   "max": 12.0,
+   "default": 0.0,
+   "dynamic_display": true,
+   "unit": "dB"
+  },
+  {
+   "key": "m56_b2",
+   "name": "63 Hz",
+   "min": -12.0,
+   "max": 12.0,
+   "default": 0.0,
+   "dynamic_display": true,
+   "unit": "dB"
+  },
+  {
+   "key": "m56_b3",
+   "name": "125 Hz",
+   "min": -12.0,
+   "max": 12.0,
+   "default": 0.0,
+   "dynamic_display": true,
+   "unit": "dB"
+  },
+  {
+   "key": "m56_b4",
+   "name": "250 Hz",
+   "min": -12.0,
+   "max": 12.0,
+   "default": 0.0,
+   "dynamic_display": true,
+   "unit": "dB"
+  },
+  {
+   "key": "m56_b5",
+   "name": "500 Hz",
+   "min": -12.0,
+   "max": 12.0,
+   "default": 0.0,
+   "dynamic_display": true,
+   "unit": "dB"
+  },
+  {
+   "key": "m56_b6",
+   "name": "1 kHz",
+   "min": -12.0,
+   "max": 12.0,
+   "default": 0.0,
+   "dynamic_display": true,
+   "unit": "dB"
+  },
+  {
+   "key": "m56_b7",
+   "name": "2 kHz",
+   "min": -12.0,
+   "max": 12.0,
+   "default": 0.0,
+   "dynamic_display": true,
+   "unit": "dB"
+  },
+  {
+   "key": "m56_b8",
+   "name": "4 kHz",
+   "min": -12.0,
+   "max": 12.0,
+   "default": 0.0,
+   "dynamic_display": true,
+   "unit": "dB"
+  },
+  {
+   "key": "m56_b9",
+   "name": "8 kHz",
+   "min": -12.0,
+   "max": 12.0,
+   "default": 0.0,
+   "dynamic_display": true,
+   "unit": "dB"
+  },
+  {
+   "key": "m56_b10",
+   "name": "16 kHz",
+   "min": -12.0,
+   "max": 12.0,
+   "default": 0.0,
+   "dynamic_display": true,
+   "unit": "dB"
+  },
+  {
+   "key": "m56_eq",
+   "name": "EQ In",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 1
+  },
+  {
+   "key": "m56_rng",
+   "name": "6 dB Rng",
+   "options": [
+    "12 dB",
+    "6 dB"
+   ],
+   "default": 0
+  },
+  {
+   "key": "m56_out",
+   "name": "Output",
+   "min": -24.0,
+   "max": 12.0,
+   "default": 0.0,
+   "dynamic_display": true,
+   "unit": "dB"
+  },
+  {
+   "key": "mq1_lf",
+   "name": "Low Frq",
+   "min": 0.0,
+   "max": 3.0,
+   "default": 2.0,
+   "dynamic_display": true,
+   "display": "int"
+  },
+  {
+   "key": "mq1_lb",
+   "name": "Low Boost",
+   "min": 0.0,
+   "max": 10.0,
+   "default": 0.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "mq1_la",
+   "name": "Low Atten",
+   "min": 0.0,
+   "max": 10.0,
+   "default": 0.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "mq1_hf",
+   "name": "High Frq",
+   "min": 0.0,
+   "max": 6.0,
+   "default": 3.0,
+   "dynamic_display": true,
+   "display": "int"
+  },
+  {
+   "key": "mq1_hb",
+   "name": "Hi Boost",
+   "min": 0.0,
+   "max": 10.0,
+   "default": 0.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "mq1_bw",
+   "name": "Bandwidth",
+   "min": 0.0,
+   "max": 10.0,
+   "default": 5.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "mq1_af",
+   "name": "Atten Sel",
+   "min": 0.0,
+   "max": 2.0,
+   "default": 1.0,
+   "dynamic_display": true,
+   "display": "int"
+  },
+  {
+   "key": "mq1_ha",
+   "name": "Hi Atten",
+   "min": 0.0,
+   "max": 10.0,
+   "default": 0.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "mq1_in",
+   "name": "EQ In",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 1
+  },
+  {
+   "key": "mq1_out",
+   "name": "Output",
+   "min": -24.0,
+   "max": 12.0,
+   "default": 0.0,
+   "dynamic_display": true,
+   "unit": "dB"
+  },
+  {
+   "key": "mq5_lf",
+   "name": "Low Frq",
+   "min": 0.0,
+   "max": 4.0,
+   "default": 2.0,
+   "dynamic_display": true,
+   "display": "int"
+  },
+  {
+   "key": "mq5_lb",
+   "name": "Low Peak",
+   "min": 0.0,
+   "max": 10.0,
+   "default": 0.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "mq5_df",
+   "name": "Dip Frq",
+   "min": 0.0,
+   "max": 10.0,
+   "default": 4.0,
+   "dynamic_display": true,
+   "display": "int"
+  },
+  {
+   "key": "mq5_dp",
+   "name": "Dip",
+   "min": 0.0,
+   "max": 10.0,
+   "default": 0.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "mq5_hf",
+   "name": "High Frq",
+   "min": 0.0,
+   "max": 4.0,
+   "default": 1.0,
+   "dynamic_display": true,
+   "display": "int"
+  },
+  {
+   "key": "mq5_hb",
+   "name": "High Peak",
+   "min": 0.0,
+   "max": 10.0,
+   "default": 0.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "mq5_in",
+   "name": "EQ In",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 1
+  },
+  {
+   "key": "mq5_out",
+   "name": "Output",
+   "min": -24.0,
+   "max": 12.0,
+   "default": 0.0,
+   "dynamic_display": true,
+   "unit": "dB"
+  },
+  {
+   "key": "ma8_in",
+   "name": "Rec Level",
+   "min": -12.0,
+   "max": 12.0,
+   "default": 0.0,
+   "dynamic_display": true,
+   "unit": "dB"
+  },
+  {
+   "key": "ma8_out",
+   "name": "Repro Lvl",
+   "min": -12.0,
+   "max": 12.0,
+   "default": 0.0,
+   "dynamic_display": true,
+   "unit": "dB"
+  },
+  {
+   "key": "ma8_spd",
+   "name": "Speed",
+   "min": 0.0,
+   "max": 2.0,
+   "default": 1.0,
+   "dynamic_display": true,
+   "display": "int"
+  },
+  {
+   "key": "ma8_type",
+   "name": "Tape",
+   "min": 0.0,
+   "max": 3.0,
+   "default": 1.0,
+   "dynamic_display": true,
+   "display": "int"
+  },
+  {
+   "key": "ma8_bias",
+   "name": "Bias",
+   "min": -6.0,
+   "max": 6.0,
+   "default": 0.0,
+   "dynamic_display": true,
+   "unit": "dB"
+  },
+  {
+   "key": "ma8_rhf",
+   "name": "Rec HF",
+   "min": -6.0,
+   "max": 6.0,
+   "default": 0.0,
+   "dynamic_display": true,
+   "unit": "dB"
+  },
+  {
+   "key": "ma8_phf",
+   "name": "Repro HF",
+   "min": -6.0,
+   "max": 6.0,
+   "default": 0.0,
+   "dynamic_display": true,
+   "unit": "dB"
+  },
+  {
+   "key": "ma8_plf",
+   "name": "Repro LF",
+   "min": -6.0,
+   "max": 6.0,
+   "default": 0.0,
+   "dynamic_display": true,
+   "unit": "dB"
+  },
+  {
+   "key": "ma8_wow",
+   "name": "Wow",
+   "min": 0.0,
+   "max": 100.0,
+   "default": 0.0,
+   "dynamic_display": true,
+   "unit": "%"
+  },
+  {
+   "key": "ma8_flut",
+   "name": "Flutter",
+   "min": 0.0,
+   "max": 100.0,
+   "default": 0.0,
+   "dynamic_display": true,
+   "unit": "%"
+  },
+  {
+   "key": "ma8_hiss",
+   "name": "Hiss",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0
+  },
+  {
+   "key": "ma8_path",
+   "name": "Tape In",
+   "options": [
+    "Thru",
+    "Repro"
+   ],
+   "default": 1
+  },
+  {
+   "key": "mat_in",
+   "name": "Rec Level",
+   "min": -12.0,
+   "max": 12.0,
+   "default": 0.0,
+   "dynamic_display": true,
+   "unit": "dB"
+  },
+  {
+   "key": "mat_out",
+   "name": "Repro Lvl",
+   "min": -12.0,
+   "max": 12.0,
+   "default": 0.0,
+   "dynamic_display": true,
+   "unit": "dB"
+  },
+  {
+   "key": "mat_spd",
+   "name": "Speed",
+   "min": 0.0,
+   "max": 3.0,
+   "default": 2.0,
+   "dynamic_display": true,
+   "display": "int"
+  },
+  {
+   "key": "mat_type",
+   "name": "Tape",
+   "min": 0.0,
+   "max": 3.0,
+   "default": 1.0,
+   "dynamic_display": true,
+   "display": "int"
+  },
+  {
+   "key": "mat_bias",
+   "name": "Bias",
+   "min": -6.0,
+   "max": 6.0,
+   "default": 0.0,
+   "dynamic_display": true,
+   "unit": "dB"
+  },
+  {
+   "key": "mat_rhf",
+   "name": "Rec HF",
+   "min": -6.0,
+   "max": 6.0,
+   "default": 0.0,
+   "dynamic_display": true,
+   "unit": "dB"
+  },
+  {
+   "key": "mat_phf",
+   "name": "Repro HF",
+   "min": -6.0,
+   "max": 6.0,
+   "default": 0.0,
+   "dynamic_display": true,
+   "unit": "dB"
+  },
+  {
+   "key": "mat_plf",
+   "name": "Repro LF",
+   "min": -6.0,
+   "max": 6.0,
+   "default": 0.0,
+   "dynamic_display": true,
+   "unit": "dB"
+  },
+  {
+   "key": "mat_wow",
+   "name": "Wow",
+   "min": 0.0,
+   "max": 100.0,
+   "default": 0.0,
+   "dynamic_display": true,
+   "unit": "%"
+  },
+  {
+   "key": "mat_flut",
+   "name": "Flutter",
+   "min": 0.0,
+   "max": 100.0,
+   "default": 0.0,
+   "dynamic_display": true,
+   "unit": "%"
+  },
+  {
+   "key": "mat_hiss",
+   "name": "Hiss",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0
+  },
+  {
+   "key": "mat_path",
+   "name": "Tape In",
+   "options": [
+    "Thru",
+    "Repro"
+   ],
+   "default": 1
+  },
+  {
+   "key": "mat_head",
+   "name": "Head",
+   "min": 0.0,
+   "max": 2.0,
+   "default": 1.0,
+   "dynamic_display": true,
+   "display": "int"
+  },
+  {
+   "key": "m22_prog",
+   "name": "Program",
+   "min": 0.0,
+   "max": 8.0,
+   "default": 0.0,
+   "dynamic_display": true,
+   "display": "int"
+  },
+  {
+   "key": "m22_bass",
+   "name": "Bass",
+   "min": 0.0,
+   "max": 100.0,
+   "default": 34.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m22_mid",
+   "name": "Mid",
+   "min": 0.0,
+   "max": 100.0,
+   "default": 29.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m22_xov",
+   "name": "Crossover",
+   "min": 0.0,
+   "max": 100.0,
+   "default": 40.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m22_treb",
+   "name": "Treble",
+   "min": 0.0,
+   "max": 100.0,
+   "default": 75.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m22_depth",
+   "name": "Depth",
+   "min": 0.0,
+   "max": 71.0,
+   "default": 0.0,
+   "dynamic_display": true,
+   "display": "int"
+  },
+  {
+   "key": "m22_pre",
+   "name": "Predelay",
+   "min": 0.0,
+   "max": 256.0,
+   "default": 0.0,
+   "dynamic_display": true,
+   "display": "int",
+   "unit": "ms"
+  },
+  {
+   "key": "m22_diff",
+   "name": "Diffusion",
+   "min": 1.0,
+   "max": 63.0,
+   "default": 40.0,
+   "dynamic_display": true,
+   "display": "int"
+  },
+  {
+   "key": "m22_mod",
+   "name": "Movement",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 1
+  },
+  {
+   "key": "m22_lvl",
+   "name": "Level",
+   "min": -24.0,
+   "max": 12.0,
+   "default": 0.0,
+   "dynamic_display": true,
+   "unit": "dB"
+  },
+  {
+   "key": "m48_prog",
+   "name": "Program",
+   "min": 0.0,
+   "max": 15.0,
+   "default": 1.0,
+   "dynamic_display": true,
+   "display": "int"
+  },
+  {
+   "key": "m48_rt",
+   "name": "Rev Time",
+   "min": 0.0,
+   "max": 100.0,
+   "default": 40.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m48_shape",
+   "name": "Shape",
+   "min": 0.0,
+   "max": 100.0,
+   "default": 50.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m48_spread",
+   "name": "Spread",
+   "min": 0.0,
+   "max": 100.0,
+   "default": 50.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m48_size",
+   "name": "Size",
+   "min": 0.0,
+   "max": 100.0,
+   "default": 60.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m48_hfc",
+   "name": "HF Cut",
+   "min": 0.0,
+   "max": 100.0,
+   "default": 80.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m48_pre",
+   "name": "Predelay",
+   "min": 0.0,
+   "max": 250.0,
+   "default": 0.0,
+   "dynamic_display": true,
+   "display": "int",
+   "unit": "ms"
+  },
+  {
+   "key": "m48_bm",
+   "name": "Bass Mult",
+   "min": 0.0,
+   "max": 100.0,
+   "default": 50.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m48_xov",
+   "name": "Crossover",
+   "min": 0.0,
+   "max": 100.0,
+   "default": 40.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m48_rthc",
+   "name": "RT HF Cut",
+   "min": 0.0,
+   "max": 100.0,
+   "default": 60.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m48_diff",
+   "name": "Diffusion",
+   "min": 0.0,
+   "max": 100.0,
+   "default": 70.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m48_spin",
+   "name": "Spin",
+   "min": 0.0,
+   "max": 100.0,
+   "default": 30.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m48_wand",
+   "name": "Wander",
+   "min": 0.0,
+   "max": 100.0,
+   "default": 30.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "m48_lvl",
+   "name": "Level",
+   "min": -24.0,
+   "max": 12.0,
+   "default": 0.0,
+   "dynamic_display": true,
+   "unit": "dB"
+  },
+  {
+   "key": "bypass",
+   "name": "Bypass",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0
+  },
+  {
+   "key": "dry_level",
+   "name": "Dry Level",
+   "min": -60.0,
+   "max": 12.0,
+   "default": 0.0,
+   "dynamic_display": true,
+   "unit": "dB"
+  },
+  {
+   "key": "view",
+   "name": "View",
+   "options": [
+    "XXL Pro",
+    "XXL-2A",
+    "XXL-1B",
+    "XXL-16VU",
+    "XXL-76",
+    "XXL-67",
+    "XXL-DISS",
+    "XXL-73",
+    "XXL-55A",
+    "XXL-56",
+    "XXL-EQ1-A",
+    "XXL-MQ-5",
+    "XXL-A80",
+    "XXL-AT12",
+    "XXL-224",
+    "XXL-480R",
+    "PATCH BAY"
+   ],
+   "default": 0
+  },
+  {
+   "key": "nav_zoom",
+   "name": "OVERVIEW",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "nav_prev",
+   "name": "<",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "nav_next",
+   "name": ">",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "go_m2a",
+   "name": "Go XXL-2A",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "go_m1b",
+   "name": "Go XXL-1B",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "go_m16",
+   "name": "Go XXL-16VU",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "go_m76",
+   "name": "Go XXL-76",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "go_m67",
+   "name": "Go XXL-67",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "go_mds",
+   "name": "Go XXL-DISS",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "go_m73",
+   "name": "Go XXL-73",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "go_m55",
+   "name": "Go XXL-55A",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "go_m56",
+   "name": "Go XXL-56",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "go_mq1",
+   "name": "Go XXL-EQ1-A",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "go_mq5",
+   "name": "Go XXL-MQ-5",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "go_ma8",
+   "name": "Go XXL-A80",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "go_mat",
+   "name": "Go XXL-AT12",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "go_m22",
+   "name": "Go XXL-224",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "go_m48",
+   "name": "Go XXL-480R",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "go_bay",
+   "name": "Go PATCH BAY",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "fm_bay",
+   "name": "Patch Bay",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "bay_clear",
+   "name": "Clear All",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "pg_overview",
+   "name": "Page overview",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0
+  },
+  {
+   "key": "pg_m2a",
+   "name": "Page m2a",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0
+  },
+  {
+   "key": "pg_m1b",
+   "name": "Page m1b",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0
+  },
+  {
+   "key": "pg_m16",
+   "name": "Page m16",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0
+  },
+  {
+   "key": "pg_m76",
+   "name": "Page m76",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0
+  },
+  {
+   "key": "pg_m67",
+   "name": "Page m67",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0
+  },
+  {
+   "key": "pg_mds",
+   "name": "Page mds",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0
+  },
+  {
+   "key": "pg_m73",
+   "name": "Page m73",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0
+  },
+  {
+   "key": "pg_m55",
+   "name": "Page m55",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0
+  },
+  {
+   "key": "pg_m56",
+   "name": "Page m56",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0
+  },
+  {
+   "key": "pg_mq1",
+   "name": "Page mq1",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0
+  },
+  {
+   "key": "pg_mq5",
+   "name": "Page mq5",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0
+  },
+  {
+   "key": "pg_ma8",
+   "name": "Page ma8",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0
+  },
+  {
+   "key": "pg_mat",
+   "name": "Page mat",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0
+  },
+  {
+   "key": "pg_m22",
+   "name": "Page m22",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0
+  },
+  {
+   "key": "pg_m48",
+   "name": "Page m48",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0
+  },
+  {
+   "key": "pg_bay",
+   "name": "Page bay",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0
+  },
+  {
+   "key": "in_sec",
+   "name": "In Section",
+   "options": [
+    "Overview",
+    "Section"
+   ],
+   "default": 0
+  },
+  {
+   "key": "in_mod",
+   "name": "In Module",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0
+  },
+  {
+   "key": "in_bay",
+   "name": "In Bay",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0
+  },
+  {
+   "key": "hdr_ti",
+   "name": "Header Value",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0
+  },
+  {
+   "key": "ac_in_m2a",
+   "name": "Cable IN to 2A",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "ac_in_m1b",
+   "name": "Cable IN to 1B",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "ac_in_m16",
+   "name": "Cable IN to 16VU",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "ac_in_m76",
+   "name": "Cable IN to 76",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "ac_in_m67",
+   "name": "Cable IN to 67",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "ac_in_mds",
+   "name": "Cable IN to DISS",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "ac_in_m73",
+   "name": "Cable IN to 73",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "ac_in_m55",
+   "name": "Cable IN to 55A",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "ac_in_m56",
+   "name": "Cable IN to 56",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "ac_in_mq1",
+   "name": "Cable IN to EQ1-A",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "ac_in_mq5",
+   "name": "Cable IN to MQ-5",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "ac_in_ma8",
+   "name": "Cable IN to A80",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "ac_in_mat",
+   "name": "Cable IN to AT12",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "ac_in_m22",
+   "name": "Cable IN to 224",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "ac_in_m48",
+   "name": "Cable IN to 480R",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "ac_in_out",
+   "name": "Cable IN to OUT",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 1,
+   "poll": false
+  },
+  {
+   "key": "ac_m2a_m2a",
+   "name": "Cable 2A to 2A",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "ac_m2a_m1b",
+   "name": "Cable 2A to 1B",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "ac_m2a_m16",
+   "name": "Cable 2A to 16VU",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "ac_m2a_m76",
+   "name": "Cable 2A to 76",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "ac_m2a_m67",
+   "name": "Cable 2A to 67",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "ac_m2a_mds",
+   "name": "Cable 2A to DISS",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "ac_m2a_m73",
+   "name": "Cable 2A to 73",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "ac_m2a_m55",
+   "name": "Cable 2A to 55A",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "ac_m2a_m56",
+   "name": "Cable 2A to 56",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "ac_m2a_mq1",
+   "name": "Cable 2A to EQ1-A",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "ac_m2a_mq5",
+   "name": "Cable 2A to MQ-5",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "ac_m2a_ma8",
+   "name": "Cable 2A to A80",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "ac_m2a_mat",
+   "name": "Cable 2A to AT12",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "ac_m2a_m22",
+   "name": "Cable 2A to 224",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "ac_m2a_m48",
+   "name": "Cable 2A to 480R",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "ac_m2a_out",
+   "name": "Cable 2A to OUT",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "ac_m1b_m2a",
+   "name": "Cable 1B to 2A",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "ac_m1b_m1b",
+   "name": "Cable 1B to 1B",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "ac_m1b_m16",
+   "name": "Cable 1B to 16VU",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "ac_m1b_m76",
+   "name": "Cable 1B to 76",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "ac_m1b_m67",
+   "name": "Cable 1B to 67",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "ac_m1b_mds",
+   "name": "Cable 1B to DISS",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "ac_m1b_m73",
+   "name": "Cable 1B to 73",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "ac_m1b_m55",
+   "name": "Cable 1B to 55A",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "ac_m1b_m56",
+   "name": "Cable 1B to 56",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "ac_m1b_mq1",
+   "name": "Cable 1B to EQ1-A",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "ac_m1b_mq5",
+   "name": "Cable 1B to MQ-5",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "ac_m1b_ma8",
+   "name": "Cable 1B to A80",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "ac_m1b_mat",
+   "name": "Cable 1B to AT12",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "ac_m1b_m22",
+   "name": "Cable 1B to 224",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "ac_m1b_m48",
+   "name": "Cable 1B to 480R",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "ac_m1b_out",
+   "name": "Cable 1B to OUT",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "ac_m16_m2a",
+   "name": "Cable 16VU to 2A",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "ac_m16_m1b",
+   "name": "Cable 16VU to 1B",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "ac_m16_m16",
+   "name": "Cable 16VU to 16VU",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "ac_m16_m76",
+   "name": "Cable 16VU to 76",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "ac_m16_m67",
+   "name": "Cable 16VU to 67",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "ac_m16_mds",
+   "name": "Cable 16VU to DISS",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "ac_m16_m73",
+   "name": "Cable 16VU to 73",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "ac_m16_m55",
+   "name": "Cable 16VU to 55A",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "ac_m16_m56",
+   "name": "Cable 16VU to 56",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "ac_m16_mq1",
+   "name": "Cable 16VU to EQ1-A",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "ac_m16_mq5",
+   "name": "Cable 16VU to MQ-5",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "ac_m16_ma8",
+   "name": "Cable 16VU to A80",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "ac_m16_mat",
+   "name": "Cable 16VU to AT12",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "ac_m16_m22",
+   "name": "Cable 16VU to 224",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "ac_m16_m48",
+   "name": "Cable 16VU to 480R",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "ac_m16_out",
+   "name": "Cable 16VU to OUT",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "ac_m76_m2a",
+   "name": "Cable 76 to 2A",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "ac_m76_m1b",
+   "name": "Cable 76 to 1B",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "ac_m76_m16",
+   "name": "Cable 76 to 16VU",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "ac_m76_m76",
+   "name": "Cable 76 to 76",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "ac_m76_m67",
+   "name": "Cable 76 to 67",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "ac_m76_mds",
+   "name": "Cable 76 to DISS",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "ac_m76_m73",
+   "name": "Cable 76 to 73",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "ac_m76_m55",
+   "name": "Cable 76 to 55A",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "ac_m76_m56",
+   "name": "Cable 76 to 56",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "ac_m76_mq1",
+   "name": "Cable 76 to EQ1-A",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "ac_m76_mq5",
+   "name": "Cable 76 to MQ-5",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "ac_m76_ma8",
+   "name": "Cable 76 to A80",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "ac_m76_mat",
+   "name": "Cable 76 to AT12",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "ac_m76_m22",
+   "name": "Cable 76 to 224",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "ac_m76_m48",
+   "name": "Cable 76 to 480R",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "ac_m76_out",
+   "name": "Cable 76 to OUT",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "ac_m67_m2a",
+   "name": "Cable 67 to 2A",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "ac_m67_m1b",
+   "name": "Cable 67 to 1B",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "ac_m67_m16",
+   "name": "Cable 67 to 16VU",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "ac_m67_m76",
+   "name": "Cable 67 to 76",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "ac_m67_m67",
+   "name": "Cable 67 to 67",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "ac_m67_mds",
+   "name": "Cable 67 to DISS",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "ac_m67_m73",
+   "name": "Cable 67 to 73",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "ac_m67_m55",
+   "name": "Cable 67 to 55A",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "ac_m67_m56",
+   "name": "Cable 67 to 56",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "ac_m67_mq1",
+   "name": "Cable 67 to EQ1-A",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "ac_m67_mq5",
+   "name": "Cable 67 to MQ-5",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "ac_m67_ma8",
+   "name": "Cable 67 to A80",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "ac_m67_mat",
+   "name": "Cable 67 to AT12",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "ac_m67_m22",
+   "name": "Cable 67 to 224",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "ac_m67_m48",
+   "name": "Cable 67 to 480R",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "ac_m67_out",
+   "name": "Cable 67 to OUT",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "ac_mds_m2a",
+   "name": "Cable DISS to 2A",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "ac_mds_m1b",
+   "name": "Cable DISS to 1B",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "ac_mds_m16",
+   "name": "Cable DISS to 16VU",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "ac_mds_m76",
+   "name": "Cable DISS to 76",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "ac_mds_m67",
+   "name": "Cable DISS to 67",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "ac_mds_mds",
+   "name": "Cable DISS to DISS",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "ac_mds_m73",
+   "name": "Cable DISS to 73",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "ac_mds_m55",
+   "name": "Cable DISS to 55A",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "ac_mds_m56",
+   "name": "Cable DISS to 56",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "ac_mds_mq1",
+   "name": "Cable DISS to EQ1-A",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "ac_mds_mq5",
+   "name": "Cable DISS to MQ-5",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "ac_mds_ma8",
+   "name": "Cable DISS to A80",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "ac_mds_mat",
+   "name": "Cable DISS to AT12",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "ac_mds_m22",
+   "name": "Cable DISS to 224",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "ac_mds_m48",
+   "name": "Cable DISS to 480R",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "ac_mds_out",
+   "name": "Cable DISS to OUT",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "ac_m73_m2a",
+   "name": "Cable 73 to 2A",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "ac_m73_m1b",
+   "name": "Cable 73 to 1B",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "ac_m73_m16",
+   "name": "Cable 73 to 16VU",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "ac_m73_m76",
+   "name": "Cable 73 to 76",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "ac_m73_m67",
+   "name": "Cable 73 to 67",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "ac_m73_mds",
+   "name": "Cable 73 to DISS",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "ac_m73_m73",
+   "name": "Cable 73 to 73",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "ac_m73_m55",
+   "name": "Cable 73 to 55A",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "ac_m73_m56",
+   "name": "Cable 73 to 56",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "ac_m73_mq1",
+   "name": "Cable 73 to EQ1-A",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "ac_m73_mq5",
+   "name": "Cable 73 to MQ-5",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "ac_m73_ma8",
+   "name": "Cable 73 to A80",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "ac_m73_mat",
+   "name": "Cable 73 to AT12",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "ac_m73_m22",
+   "name": "Cable 73 to 224",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "ac_m73_m48",
+   "name": "Cable 73 to 480R",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "ac_m73_out",
+   "name": "Cable 73 to OUT",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "ac_m55_m2a",
+   "name": "Cable 55A to 2A",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "ac_m55_m1b",
+   "name": "Cable 55A to 1B",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "ac_m55_m16",
+   "name": "Cable 55A to 16VU",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "ac_m55_m76",
+   "name": "Cable 55A to 76",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "ac_m55_m67",
+   "name": "Cable 55A to 67",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "ac_m55_mds",
+   "name": "Cable 55A to DISS",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "ac_m55_m73",
+   "name": "Cable 55A to 73",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "ac_m55_m55",
+   "name": "Cable 55A to 55A",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "ac_m55_m56",
+   "name": "Cable 55A to 56",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "ac_m55_mq1",
+   "name": "Cable 55A to EQ1-A",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "ac_m55_mq5",
+   "name": "Cable 55A to MQ-5",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "ac_m55_ma8",
+   "name": "Cable 55A to A80",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "ac_m55_mat",
+   "name": "Cable 55A to AT12",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "ac_m55_m22",
+   "name": "Cable 55A to 224",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "ac_m55_m48",
+   "name": "Cable 55A to 480R",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "ac_m55_out",
+   "name": "Cable 55A to OUT",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "ac_m56_m2a",
+   "name": "Cable 56 to 2A",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "ac_m56_m1b",
+   "name": "Cable 56 to 1B",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "ac_m56_m16",
+   "name": "Cable 56 to 16VU",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "ac_m56_m76",
+   "name": "Cable 56 to 76",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "ac_m56_m67",
+   "name": "Cable 56 to 67",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "ac_m56_mds",
+   "name": "Cable 56 to DISS",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "ac_m56_m73",
+   "name": "Cable 56 to 73",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "ac_m56_m55",
+   "name": "Cable 56 to 55A",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "ac_m56_m56",
+   "name": "Cable 56 to 56",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "ac_m56_mq1",
+   "name": "Cable 56 to EQ1-A",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "ac_m56_mq5",
+   "name": "Cable 56 to MQ-5",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "ac_m56_ma8",
+   "name": "Cable 56 to A80",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "ac_m56_mat",
+   "name": "Cable 56 to AT12",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "ac_m56_m22",
+   "name": "Cable 56 to 224",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "ac_m56_m48",
+   "name": "Cable 56 to 480R",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "ac_m56_out",
+   "name": "Cable 56 to OUT",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "ac_mq1_m2a",
+   "name": "Cable EQ1-A to 2A",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "ac_mq1_m1b",
+   "name": "Cable EQ1-A to 1B",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "ac_mq1_m16",
+   "name": "Cable EQ1-A to 16VU",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "ac_mq1_m76",
+   "name": "Cable EQ1-A to 76",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "ac_mq1_m67",
+   "name": "Cable EQ1-A to 67",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "ac_mq1_mds",
+   "name": "Cable EQ1-A to DISS",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "ac_mq1_m73",
+   "name": "Cable EQ1-A to 73",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "ac_mq1_m55",
+   "name": "Cable EQ1-A to 55A",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "ac_mq1_m56",
+   "name": "Cable EQ1-A to 56",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "ac_mq1_mq1",
+   "name": "Cable EQ1-A to EQ1-A",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "ac_mq1_mq5",
+   "name": "Cable EQ1-A to MQ-5",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "ac_mq1_ma8",
+   "name": "Cable EQ1-A to A80",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "ac_mq1_mat",
+   "name": "Cable EQ1-A to AT12",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "ac_mq1_m22",
+   "name": "Cable EQ1-A to 224",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "ac_mq1_m48",
+   "name": "Cable EQ1-A to 480R",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "ac_mq1_out",
+   "name": "Cable EQ1-A to OUT",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "ac_mq5_m2a",
+   "name": "Cable MQ-5 to 2A",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "ac_mq5_m1b",
+   "name": "Cable MQ-5 to 1B",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "ac_mq5_m16",
+   "name": "Cable MQ-5 to 16VU",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "ac_mq5_m76",
+   "name": "Cable MQ-5 to 76",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "ac_mq5_m67",
+   "name": "Cable MQ-5 to 67",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "ac_mq5_mds",
+   "name": "Cable MQ-5 to DISS",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "ac_mq5_m73",
+   "name": "Cable MQ-5 to 73",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "ac_mq5_m55",
+   "name": "Cable MQ-5 to 55A",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "ac_mq5_m56",
+   "name": "Cable MQ-5 to 56",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "ac_mq5_mq1",
+   "name": "Cable MQ-5 to EQ1-A",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "ac_mq5_mq5",
+   "name": "Cable MQ-5 to MQ-5",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "ac_mq5_ma8",
+   "name": "Cable MQ-5 to A80",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "ac_mq5_mat",
+   "name": "Cable MQ-5 to AT12",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "ac_mq5_m22",
+   "name": "Cable MQ-5 to 224",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "ac_mq5_m48",
+   "name": "Cable MQ-5 to 480R",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "ac_mq5_out",
+   "name": "Cable MQ-5 to OUT",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "ac_ma8_m2a",
+   "name": "Cable A80 to 2A",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "ac_ma8_m1b",
+   "name": "Cable A80 to 1B",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "ac_ma8_m16",
+   "name": "Cable A80 to 16VU",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "ac_ma8_m76",
+   "name": "Cable A80 to 76",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "ac_ma8_m67",
+   "name": "Cable A80 to 67",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "ac_ma8_mds",
+   "name": "Cable A80 to DISS",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "ac_ma8_m73",
+   "name": "Cable A80 to 73",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "ac_ma8_m55",
+   "name": "Cable A80 to 55A",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "ac_ma8_m56",
+   "name": "Cable A80 to 56",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "ac_ma8_mq1",
+   "name": "Cable A80 to EQ1-A",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "ac_ma8_mq5",
+   "name": "Cable A80 to MQ-5",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "ac_ma8_ma8",
+   "name": "Cable A80 to A80",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "ac_ma8_mat",
+   "name": "Cable A80 to AT12",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "ac_ma8_m22",
+   "name": "Cable A80 to 224",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "ac_ma8_m48",
+   "name": "Cable A80 to 480R",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "ac_ma8_out",
+   "name": "Cable A80 to OUT",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "ac_mat_m2a",
+   "name": "Cable AT12 to 2A",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "ac_mat_m1b",
+   "name": "Cable AT12 to 1B",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "ac_mat_m16",
+   "name": "Cable AT12 to 16VU",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "ac_mat_m76",
+   "name": "Cable AT12 to 76",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "ac_mat_m67",
+   "name": "Cable AT12 to 67",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "ac_mat_mds",
+   "name": "Cable AT12 to DISS",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "ac_mat_m73",
+   "name": "Cable AT12 to 73",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "ac_mat_m55",
+   "name": "Cable AT12 to 55A",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "ac_mat_m56",
+   "name": "Cable AT12 to 56",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "ac_mat_mq1",
+   "name": "Cable AT12 to EQ1-A",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "ac_mat_mq5",
+   "name": "Cable AT12 to MQ-5",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "ac_mat_ma8",
+   "name": "Cable AT12 to A80",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "ac_mat_mat",
+   "name": "Cable AT12 to AT12",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "ac_mat_m22",
+   "name": "Cable AT12 to 224",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "ac_mat_m48",
+   "name": "Cable AT12 to 480R",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "ac_mat_out",
+   "name": "Cable AT12 to OUT",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "ac_m22_m2a",
+   "name": "Cable 224 to 2A",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "ac_m22_m1b",
+   "name": "Cable 224 to 1B",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "ac_m22_m16",
+   "name": "Cable 224 to 16VU",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "ac_m22_m76",
+   "name": "Cable 224 to 76",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "ac_m22_m67",
+   "name": "Cable 224 to 67",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "ac_m22_mds",
+   "name": "Cable 224 to DISS",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "ac_m22_m73",
+   "name": "Cable 224 to 73",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "ac_m22_m55",
+   "name": "Cable 224 to 55A",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "ac_m22_m56",
+   "name": "Cable 224 to 56",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "ac_m22_mq1",
+   "name": "Cable 224 to EQ1-A",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "ac_m22_mq5",
+   "name": "Cable 224 to MQ-5",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "ac_m22_ma8",
+   "name": "Cable 224 to A80",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "ac_m22_mat",
+   "name": "Cable 224 to AT12",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "ac_m22_m22",
+   "name": "Cable 224 to 224",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "ac_m22_m48",
+   "name": "Cable 224 to 480R",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "ac_m22_out",
+   "name": "Cable 224 to OUT",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "ac_m48_m2a",
+   "name": "Cable 480R to 2A",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "ac_m48_m1b",
+   "name": "Cable 480R to 1B",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "ac_m48_m16",
+   "name": "Cable 480R to 16VU",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "ac_m48_m76",
+   "name": "Cable 480R to 76",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "ac_m48_m67",
+   "name": "Cable 480R to 67",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "ac_m48_mds",
+   "name": "Cable 480R to DISS",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "ac_m48_m73",
+   "name": "Cable 480R to 73",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "ac_m48_m55",
+   "name": "Cable 480R to 55A",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "ac_m48_m56",
+   "name": "Cable 480R to 56",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "ac_m48_mq1",
+   "name": "Cable 480R to EQ1-A",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "ac_m48_mq5",
+   "name": "Cable 480R to MQ-5",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "ac_m48_ma8",
+   "name": "Cable 480R to A80",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "ac_m48_mat",
+   "name": "Cable 480R to AT12",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "ac_m48_m22",
+   "name": "Cable 480R to 224",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "ac_m48_m48",
+   "name": "Cable 480R to 480R",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "ac_m48_out",
+   "name": "Cable 480R to OUT",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0,
+   "poll": false
+  },
+  {
+   "key": "fao_0",
+   "name": "Out Socket 0",
+   "options": [
+    "-",
+    "Fits",
+    "Blocked"
+   ],
+   "default": 0
+  },
+  {
+   "key": "fao_1",
+   "name": "Out Socket 1",
+   "options": [
+    "-",
+    "Fits",
+    "Blocked"
+   ],
+   "default": 0
+  },
+  {
+   "key": "fao_2",
+   "name": "Out Socket 2",
+   "options": [
+    "-",
+    "Fits",
+    "Blocked"
+   ],
+   "default": 0
+  },
+  {
+   "key": "fao_3",
+   "name": "Out Socket 3",
+   "options": [
+    "-",
+    "Fits",
+    "Blocked"
+   ],
+   "default": 0
+  },
+  {
+   "key": "fao_4",
+   "name": "Out Socket 4",
+   "options": [
+    "-",
+    "Fits",
+    "Blocked"
+   ],
+   "default": 0
+  },
+  {
+   "key": "fao_5",
+   "name": "Out Socket 5",
+   "options": [
+    "-",
+    "Fits",
+    "Blocked"
+   ],
+   "default": 0
+  },
+  {
+   "key": "fao_6",
+   "name": "Out Socket 6",
+   "options": [
+    "-",
+    "Fits",
+    "Blocked"
+   ],
+   "default": 0
+  },
+  {
+   "key": "fao_7",
+   "name": "Out Socket 7",
+   "options": [
+    "-",
+    "Fits",
+    "Blocked"
+   ],
+   "default": 0
+  },
+  {
+   "key": "fao_8",
+   "name": "Out Socket 8",
+   "options": [
+    "-",
+    "Fits",
+    "Blocked"
+   ],
+   "default": 0
+  },
+  {
+   "key": "fao_9",
+   "name": "Out Socket 9",
+   "options": [
+    "-",
+    "Fits",
+    "Blocked"
+   ],
+   "default": 0
+  },
+  {
+   "key": "fao_10",
+   "name": "Out Socket 10",
+   "options": [
+    "-",
+    "Fits",
+    "Blocked"
+   ],
+   "default": 0
+  },
+  {
+   "key": "fao_11",
+   "name": "Out Socket 11",
+   "options": [
+    "-",
+    "Fits",
+    "Blocked"
+   ],
+   "default": 0
+  },
+  {
+   "key": "fao_12",
+   "name": "Out Socket 12",
+   "options": [
+    "-",
+    "Fits",
+    "Blocked"
+   ],
+   "default": 0
+  },
+  {
+   "key": "fao_13",
+   "name": "Out Socket 13",
+   "options": [
+    "-",
+    "Fits",
+    "Blocked"
+   ],
+   "default": 0
+  },
+  {
+   "key": "fao_14",
+   "name": "Out Socket 14",
+   "options": [
+    "-",
+    "Fits",
+    "Blocked"
+   ],
+   "default": 0
+  },
+  {
+   "key": "fao_15",
+   "name": "Out Socket 15",
+   "options": [
+    "-",
+    "Fits",
+    "Blocked"
+   ],
+   "default": 0
+  },
+  {
+   "key": "fai_0",
+   "name": "In Socket 0",
+   "options": [
+    "-",
+    "Fits",
+    "Blocked"
+   ],
+   "default": 0
+  },
+  {
+   "key": "fai_1",
+   "name": "In Socket 1",
+   "options": [
+    "-",
+    "Fits",
+    "Blocked"
+   ],
+   "default": 0
+  },
+  {
+   "key": "fai_2",
+   "name": "In Socket 2",
+   "options": [
+    "-",
+    "Fits",
+    "Blocked"
+   ],
+   "default": 0
+  },
+  {
+   "key": "fai_3",
+   "name": "In Socket 3",
+   "options": [
+    "-",
+    "Fits",
+    "Blocked"
+   ],
+   "default": 0
+  },
+  {
+   "key": "fai_4",
+   "name": "In Socket 4",
+   "options": [
+    "-",
+    "Fits",
+    "Blocked"
+   ],
+   "default": 0
+  },
+  {
+   "key": "fai_5",
+   "name": "In Socket 5",
+   "options": [
+    "-",
+    "Fits",
+    "Blocked"
+   ],
+   "default": 0
+  },
+  {
+   "key": "fai_6",
+   "name": "In Socket 6",
+   "options": [
+    "-",
+    "Fits",
+    "Blocked"
+   ],
+   "default": 0
+  },
+  {
+   "key": "fai_7",
+   "name": "In Socket 7",
+   "options": [
+    "-",
+    "Fits",
+    "Blocked"
+   ],
+   "default": 0
+  },
+  {
+   "key": "fai_8",
+   "name": "In Socket 8",
+   "options": [
+    "-",
+    "Fits",
+    "Blocked"
+   ],
+   "default": 0
+  },
+  {
+   "key": "fai_9",
+   "name": "In Socket 9",
+   "options": [
+    "-",
+    "Fits",
+    "Blocked"
+   ],
+   "default": 0
+  },
+  {
+   "key": "fai_10",
+   "name": "In Socket 10",
+   "options": [
+    "-",
+    "Fits",
+    "Blocked"
+   ],
+   "default": 0
+  },
+  {
+   "key": "fai_11",
+   "name": "In Socket 11",
+   "options": [
+    "-",
+    "Fits",
+    "Blocked"
+   ],
+   "default": 0
+  },
+  {
+   "key": "fai_12",
+   "name": "In Socket 12",
+   "options": [
+    "-",
+    "Fits",
+    "Blocked"
+   ],
+   "default": 0
+  },
+  {
+   "key": "fai_13",
+   "name": "In Socket 13",
+   "options": [
+    "-",
+    "Fits",
+    "Blocked"
+   ],
+   "default": 0
+  },
+  {
+   "key": "fai_14",
+   "name": "In Socket 14",
+   "options": [
+    "-",
+    "Fits",
+    "Blocked"
+   ],
+   "default": 0
+  },
+  {
+   "key": "fai_15",
+   "name": "In Socket 15",
+   "options": [
+    "-",
+    "Fits",
+    "Blocked"
+   ],
+   "default": 0
+  },
+  {
+   "key": "hao_0",
+   "name": "Held hao 1",
+   "options": [
+    "-",
+    "IN",
+    "2A",
+    "1B",
+    "16VU",
+    "76",
+    "67",
+    "DISS",
+    "73",
+    "55A"
+   ],
+   "default": 0
+  },
+  {
+   "key": "hao_1",
+   "name": "Held hao 2",
+   "options": [
+    "-",
+    "56",
+    "EQ1-A",
+    "MQ-5",
+    "A80",
+    "AT12",
+    "224",
+    "480R"
+   ],
+   "default": 0
+  },
+  {
+   "key": "hai_0",
+   "name": "Held hai 1",
+   "options": [
+    "-",
+    "2A",
+    "1B",
+    "16VU",
+    "76",
+    "67",
+    "DISS",
+    "73",
+    "55A",
+    "56"
+   ],
+   "default": 0
+  },
+  {
+   "key": "hai_1",
+   "name": "Held hai 2",
+   "options": [
+    "-",
+    "EQ1-A",
+    "MQ-5",
+    "A80",
+    "AT12",
+    "224",
+    "480R",
+    "OUT"
+   ],
+   "default": 0
+  },
+  {
+   "key": "pk",
+   "name": "Patch Step",
+   "options": [
+    "Off",
+    "Choose",
+    "Pick input",
+    "Pick output",
+    "Connected"
+   ],
+   "default": 0
+  },
+  {
+   "key": "pk_ta",
+   "name": "Socket Taps",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0
+  },
+  {
+   "key": "pk_c",
+   "name": "Patch Cancel Shown",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0
+  },
+  {
+   "key": "pk_cancel",
+   "name": "Patch Cancel",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "pk_done",
+   "name": "Patch Done",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "pk_unplug",
+   "name": "Patch Unplug",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "tao_0",
+   "name": "Socket Out IN",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "tao_1",
+   "name": "Socket Out 2A",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "tao_2",
+   "name": "Socket Out 1B",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "tao_3",
+   "name": "Socket Out 16VU",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "tao_4",
+   "name": "Socket Out 76",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "tao_5",
+   "name": "Socket Out 67",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "tao_6",
+   "name": "Socket Out DISS",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "tao_7",
+   "name": "Socket Out 73",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "tao_8",
+   "name": "Socket Out 55A",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "tao_9",
+   "name": "Socket Out 56",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "tao_10",
+   "name": "Socket Out EQ1-A",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "tao_11",
+   "name": "Socket Out MQ-5",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "tao_12",
+   "name": "Socket Out A80",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "tao_13",
+   "name": "Socket Out AT12",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "tao_14",
+   "name": "Socket Out 224",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "tao_15",
+   "name": "Socket Out 480R",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "tai_0",
+   "name": "Socket In 2A",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "tai_1",
+   "name": "Socket In 1B",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "tai_2",
+   "name": "Socket In 16VU",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "tai_3",
+   "name": "Socket In 76",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "tai_4",
+   "name": "Socket In 67",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "tai_5",
+   "name": "Socket In DISS",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "tai_6",
+   "name": "Socket In 73",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "tai_7",
+   "name": "Socket In 55A",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "tai_8",
+   "name": "Socket In 56",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "tai_9",
+   "name": "Socket In EQ1-A",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "tai_10",
+   "name": "Socket In MQ-5",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "tai_11",
+   "name": "Socket In A80",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "tai_12",
+   "name": "Socket In AT12",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "tai_13",
+   "name": "Socket In 224",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "tai_14",
+   "name": "Socket In 480R",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "tai_15",
+   "name": "Socket In OUT",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "momentary": true,
+   "type": "trigger",
+   "refresh_display": true
+  },
+  {
+   "key": "patch_info",
+   "name": "Patch Info",
+   "min": 0.0,
+   "max": 0.0,
+   "default": 0.0,
+   "display": "string"
+  },
+  {
+   "key": "touch_info",
+   "name": "Touch Info",
+   "min": 0.0,
+   "max": 0.0,
+   "default": 0.0,
+   "display": "string"
+  },
+  {
+   "key": "mod_info",
+   "name": "Module Info",
+   "min": 0.0,
+   "max": 0.0,
+   "default": 0.0,
+   "display": "string"
+  },
+  {
+   "key": "cpu_info",
+   "name": "Load",
+   "min": 0.0,
+   "max": 0.0,
+   "default": 0.0,
+   "display": "string"
+  },
+  {
+   "key": "ts_m2a",
+   "name": "Tile m2a",
+   "min": 0.0,
+   "max": 0.0,
+   "default": 0.0,
+   "display": "string"
+  },
+  {
+   "key": "ts_m1b",
+   "name": "Tile m1b",
+   "min": 0.0,
+   "max": 0.0,
+   "default": 0.0,
+   "display": "string"
+  },
+  {
+   "key": "ts_m16",
+   "name": "Tile m16",
+   "min": 0.0,
+   "max": 0.0,
+   "default": 0.0,
+   "display": "string"
+  },
+  {
+   "key": "ts_m76",
+   "name": "Tile m76",
+   "min": 0.0,
+   "max": 0.0,
+   "default": 0.0,
+   "display": "string"
+  },
+  {
+   "key": "ts_m67",
+   "name": "Tile m67",
+   "min": 0.0,
+   "max": 0.0,
+   "default": 0.0,
+   "display": "string"
+  },
+  {
+   "key": "ts_mds",
+   "name": "Tile mds",
+   "min": 0.0,
+   "max": 0.0,
+   "default": 0.0,
+   "display": "string"
+  },
+  {
+   "key": "ts_m73",
+   "name": "Tile m73",
+   "min": 0.0,
+   "max": 0.0,
+   "default": 0.0,
+   "display": "string"
+  },
+  {
+   "key": "ts_m55",
+   "name": "Tile m55",
+   "min": 0.0,
+   "max": 0.0,
+   "default": 0.0,
+   "display": "string"
+  },
+  {
+   "key": "ts_m56",
+   "name": "Tile m56",
+   "min": 0.0,
+   "max": 0.0,
+   "default": 0.0,
+   "display": "string"
+  },
+  {
+   "key": "ts_mq1",
+   "name": "Tile mq1",
+   "min": 0.0,
+   "max": 0.0,
+   "default": 0.0,
+   "display": "string"
+  },
+  {
+   "key": "ts_mq5",
+   "name": "Tile mq5",
+   "min": 0.0,
+   "max": 0.0,
+   "default": 0.0,
+   "display": "string"
+  },
+  {
+   "key": "ts_ma8",
+   "name": "Tile ma8",
+   "min": 0.0,
+   "max": 0.0,
+   "default": 0.0,
+   "display": "string"
+  },
+  {
+   "key": "ts_mat",
+   "name": "Tile mat",
+   "min": 0.0,
+   "max": 0.0,
+   "default": 0.0,
+   "display": "string"
+  },
+  {
+   "key": "ts_m22",
+   "name": "Tile m22",
+   "min": 0.0,
+   "max": 0.0,
+   "default": 0.0,
+   "display": "string"
+  },
+  {
+   "key": "ts_m48",
+   "name": "Tile m48",
+   "min": 0.0,
+   "max": 0.0,
+   "default": 0.0,
+   "display": "string"
+  },
+  {
+   "key": "ts_bay",
+   "name": "Tile bay",
+   "min": 0.0,
+   "max": 0.0,
+   "default": 0.0,
+   "display": "string"
+  },
+  {
+   "key": "m_in",
+   "name": "In Meter",
+   "options": [
+    "0",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8"
+   ],
+   "default": 0
+  },
+  {
+   "key": "m_out",
+   "name": "Out Meter",
+   "options": [
+    "0",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8"
+   ],
+   "default": 0
+  },
+  {
+   "key": "m_vu",
+   "name": "Module Meter",
+   "options": [
+    "0",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "10",
+    "11",
+    "12",
+    "13",
+    "14",
+    "15",
+    "16",
+    "17",
+    "18",
+    "19",
+    "20",
+    "21",
+    "22",
+    "23",
+    "24",
+    "25",
+    "26",
+    "27",
+    "28",
+    "29",
+    "30",
+    "31"
+   ],
+   "default": 0
+  },
+  {
+   "key": "ql1",
+   "name": "Q-Link 1",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "ql2",
+   "name": "Q-Link 2",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "ql3",
+   "name": "Q-Link 3",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "ql4",
+   "name": "Q-Link 4",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "ql5",
+   "name": "Q-Link 5",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "ql6",
+   "name": "Q-Link 6",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "ql7",
+   "name": "Q-Link 7",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "ql8",
+   "name": "Q-Link 8",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "ql9",
+   "name": "Q-Link 9",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "ql10",
+   "name": "Q-Link 10",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "ql11",
+   "name": "Q-Link 11",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "ql12",
+   "name": "Q-Link 12",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "ql13",
+   "name": "Q-Link 13",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "ql14",
+   "name": "Q-Link 14",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "ql15",
+   "name": "Q-Link 15",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  },
+  {
+   "key": "ql16",
+   "name": "Q-Link 16",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "dynamic_name": true,
+   "dynamic_display": true
+  }
+ ],
+ "sections": [
+  {
+   "label": "XXL-2A",
+   "keys": [
+    "m2a_peak",
+    "m2a_gain",
+    "m2a_mode",
+    "m2a_emph",
+    "m2a_link"
+   ]
+  },
+  {
+   "label": "XXL-1B",
+   "keys": [
+    "m1b_thr",
+    "m1b_gain",
+    "m1b_ratio",
+    "m1b_time",
+    "m1b_att",
+    "m1b_rel",
+    "m1b_link"
+   ]
+  },
+  {
+   "label": "XXL-16VU",
+   "keys": [
+    "m16_thr",
+    "m16_ratio",
+    "m16_out",
+    "m16_link"
+   ]
+  },
+  {
+   "label": "XXL-76",
+   "keys": [
+    "m76_in",
+    "m76_out",
+    "m76_att",
+    "m76_rel",
+    "m76_ratio",
+    "m76_rev",
+    "m76_link"
+   ]
+  },
+  {
+   "label": "XXL-67",
+   "keys": [
+    "m67_in",
+    "m67_thr",
+    "m67_tc",
+    "m67_out",
+    "m67_ms",
+    "m67_link"
+   ]
+  },
+  {
+   "label": "XXL-DISS",
+   "keys": [
+    "mds_in",
+    "mds_att",
+    "mds_rel",
+    "mds_out",
+    "mds_ratio",
+    "mds_det",
+    "mds_aud",
+    "mds_link"
+   ]
+  },
+  {
+   "label": "XXL-73",
+   "keys": [
+    "m73_gain",
+    "m73_out",
+    "m73_hpf",
+    "m73_lf",
+    "m73_lg",
+    "m73_mf",
+    "m73_mg",
+    "m73_hg",
+    "m73_eq",
+    "m73_ph"
+   ]
+  },
+  {
+   "label": "XXL-55A",
+   "keys": [
+    "m55_lf",
+    "m55_lg",
+    "m55_lb",
+    "m55_mf",
+    "m55_mg",
+    "m55_hf",
+    "m55_hg",
+    "m55_hb",
+    "m55_flt",
+    "m55_eq",
+    "m55_ph",
+    "m55_out"
+   ]
+  },
+  {
+   "label": "XXL-56",
+   "keys": [
+    "m56_b1",
+    "m56_b2",
+    "m56_b3",
+    "m56_b4",
+    "m56_b5",
+    "m56_b6",
+    "m56_b7",
+    "m56_b8",
+    "m56_b9",
+    "m56_b10",
+    "m56_eq",
+    "m56_rng",
+    "m56_out"
+   ]
+  },
+  {
+   "label": "XXL-EQ1-A",
+   "keys": [
+    "mq1_lf",
+    "mq1_lb",
+    "mq1_la",
+    "mq1_hf",
+    "mq1_hb",
+    "mq1_bw",
+    "mq1_af",
+    "mq1_ha",
+    "mq1_in",
+    "mq1_out"
+   ]
+  },
+  {
+   "label": "XXL-MQ-5",
+   "keys": [
+    "mq5_lf",
+    "mq5_lb",
+    "mq5_df",
+    "mq5_dp",
+    "mq5_hf",
+    "mq5_hb",
+    "mq5_in",
+    "mq5_out"
+   ]
+  },
+  {
+   "label": "XXL-A80",
+   "keys": [
+    "ma8_in",
+    "ma8_out",
+    "ma8_spd",
+    "ma8_type",
+    "ma8_bias",
+    "ma8_rhf",
+    "ma8_phf",
+    "ma8_plf",
+    "ma8_wow",
+    "ma8_flut",
+    "ma8_hiss",
+    "ma8_path"
+   ]
+  },
+  {
+   "label": "XXL-AT12",
+   "keys": [
+    "mat_in",
+    "mat_out",
+    "mat_spd",
+    "mat_type",
+    "mat_bias",
+    "mat_rhf",
+    "mat_phf",
+    "mat_plf",
+    "mat_wow",
+    "mat_flut",
+    "mat_hiss",
+    "mat_path",
+    "mat_head"
+   ]
+  },
+  {
+   "label": "XXL-224",
+   "keys": [
+    "m22_prog",
+    "m22_bass",
+    "m22_mid",
+    "m22_xov",
+    "m22_treb",
+    "m22_depth",
+    "m22_pre",
+    "m22_diff",
+    "m22_mod",
+    "m22_lvl"
+   ]
+  },
+  {
+   "label": "XXL-480R",
+   "keys": [
+    "m48_prog",
+    "m48_rt",
+    "m48_shape",
+    "m48_spread",
+    "m48_size",
+    "m48_hfc",
+    "m48_pre",
+    "m48_bm",
+    "m48_xov",
+    "m48_rthc",
+    "m48_diff",
+    "m48_spin",
+    "m48_wand",
+    "m48_lvl"
+   ]
+  },
+  {
+   "label": "PATCH BAY",
+   "keys": [
+    "dry_level"
+   ]
+  }
+ ]
+}

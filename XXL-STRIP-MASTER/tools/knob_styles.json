@@ -1,0 +1,11 @@
+{
+ "*": "GREY",
+ "drive": "RED",
+ "density": "RED",
+ "lf_gain": "BROWN",
+ "hf_gain": "BLUE",
+ "hfc_thr": "GREEN",
+ "hfc_xover": "GREEN",
+ "width": "BLACK",
+ "space": "BLACK"
+}

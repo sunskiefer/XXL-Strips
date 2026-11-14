@@ -1,0 +1,32 @@
+{
+  "name": "XXL STRIP",
+  "vendor": "L'Cronx",
+  "uid": "XStC",
+  "version": 1000,
+  "so": "xxlstrip.so",
+  "params": "params.json",
+  "effect": true,
+  "presets": "presets.json",
+  "build": {
+    "root": ".",
+    "sources": [
+      "src/engine.cc",
+      "third_party/dusk/dsp/FourKEQDSP.cpp"
+    ],
+    "cflags": [
+      "-Isrc",
+      "-Ithird_party/dusk/dsp"
+    ],
+    "libs": [
+      "-lm",
+      "-ldl",
+      "-lpthread"
+    ]
+  },
+  "layout": "layout.conf",
+  "title_font": "art/fonts/TitilliumWeb-SemiBold.ttf",
+  "defines": {
+    "HAS_DISPLAY_REV": 1,
+    "DISPLAY_REV_NO_UPDATE": 1
+  }
+}

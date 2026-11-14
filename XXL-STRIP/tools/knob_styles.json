@@ -1,0 +1,12 @@
+{
+ "*": "GREY",
+ "drive": "RED",
+ "hpf_freq": "GREEN",
+ "lpf_freq": "BROWN",
+ "hf_gain": "RED",
+ "hmf_gain": "GREEN",
+ "lmf_gain": "BLUE",
+ "lf_gain": "BROWN",
+ "comp_thr": "RED",
+ "gate_thr": "GREEN"
+}

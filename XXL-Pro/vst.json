@@ -1,0 +1,14 @@
+{
+  "name": "XXL Pro",
+  "vendor": "L'Cronx",
+  "uid": "XPro",
+  "version": 1000,
+  "so": "xxlpro.so",
+  "params": "params.json",
+  "effect": true,
+  "presets": "presets.json",
+  "build": {"root": ".", "sources": ["src/engine.cc"], "cflags": ["-Isrc"], "libs": ["-lm", "-ldl", "-lpthread"]},
+  "layout": "layout.conf",
+  "title_font": "art/fonts/TitilliumWeb-SemiBold.ttf",
+  "defines": {"HAS_DISPLAY_REV": 1, "PARAM_TEXT_MAX": 96, "DISPLAY_REV_NO_UPDATE": 1}
+}

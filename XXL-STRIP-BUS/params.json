@@ -1,0 +1,143 @@
+{
+ "name": "XXL STRIP BUS",
+ "params": [
+  {
+   "key": "comp_in",
+   "name": "COMP",
+   "options": [
+    "Out",
+    "In"
+   ],
+   "default": 1
+  },
+  {
+   "key": "thr",
+   "name": "THRESH",
+   "min": -15.0,
+   "max": 15.0,
+   "default": 0.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "makeup",
+   "name": "MAKE-UP",
+   "min": 0.0,
+   "max": 20.0,
+   "default": 0.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "ratio",
+   "name": "RATIO",
+   "options": [
+    "1.5:1",
+    "2:1",
+    "4:1",
+    "10:1"
+   ],
+   "default": 2
+  },
+  {
+   "key": "attack",
+   "name": "ATTACK",
+   "options": [
+    "0.1 ms",
+    "0.3 ms",
+    "1 ms",
+    "3 ms",
+    "10 ms",
+    "30 ms"
+   ],
+   "default": 3
+  },
+  {
+   "key": "release",
+   "name": "RELEASE",
+   "options": [
+    "0.1 s",
+    "0.3 s",
+    "0.6 s",
+    "1.2 s",
+    "Auto"
+   ],
+   "default": 4
+  },
+  {
+   "key": "mode",
+   "name": "MODE",
+   "options": [
+    "Classic",
+    "Modern"
+   ],
+   "default": 0,
+   "refresh_display": true
+  },
+  {
+   "key": "sc_hpf_in",
+   "name": "SC HPF",
+   "options": [
+    "Out",
+    "In"
+   ],
+   "default": 0
+  },
+  {
+   "key": "sc_hpf",
+   "name": "SC FRQ",
+   "min": 20.0,
+   "max": 300.0,
+   "default": 90.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "mix",
+   "name": "MIX",
+   "min": 0.0,
+   "max": 100.0,
+   "default": 100.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "in_gain",
+   "name": "INPUT",
+   "min": -20.0,
+   "max": 20.0,
+   "default": 0.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "out_gain",
+   "name": "OUTPUT",
+   "min": -20.0,
+   "max": 20.0,
+   "default": 0.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "vu_src",
+   "name": "VU SHOWS",
+   "options": [
+    "Gain Red",
+    "Output",
+    "Input"
+   ],
+   "default": 0
+  },
+  {
+   "key": "vu",
+   "name": "VU",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "gr",
+   "name": "GAIN RED",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "dynamic_display": true
+  }
+ ]
+}

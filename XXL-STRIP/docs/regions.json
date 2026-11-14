@@ -1,0 +1,119 @@
+{
+ "valuelists": {
+  "outIn": [
+   "Out",
+   "In"
+  ],
+  "offOn": [
+   "Off",
+   "On"
+  ],
+  "model": [
+   "E Brown",
+   "E Black",
+   "G"
+  ],
+  "shape": [
+   "Shelf",
+   "Bell"
+  ],
+  "attack": [
+   "Auto",
+   "Fast"
+  ],
+  "makeup": [
+   "Off",
+   "Auto"
+  ],
+  "position": [
+   "Pre EQ",
+   "Post EQ"
+  ],
+  "sidechain": [
+   "Input",
+   "Filters",
+   "EQ"
+  ],
+  "gateMode": [
+   "Expand",
+   "Gate"
+  ],
+  "oversampling": [
+   "1x",
+   "2x"
+  ],
+  "vuSource": [
+   "Output",
+   "Input",
+   "Gain Red"
+  ]
+ },
+ "regions": {
+  "input": [
+   "in_gain",
+   "phase",
+   "model",
+   "drive",
+   "os"
+  ],
+  "filters": [
+   "hpf_in",
+   "hpf_freq",
+   "lpf_in",
+   "lpf_freq"
+  ],
+  "eq": [
+   "eq_in"
+  ],
+  "eq_hf": [
+   "hf_gain",
+   "hf_freq",
+   "hf_bell"
+  ],
+  "eq_hmf": [
+   "hmf_gain",
+   "hmf_freq",
+   "hmf_q",
+   "hmf_x3"
+  ],
+  "eq_lmf": [
+   "lmf_gain",
+   "lmf_freq",
+   "lmf_q",
+   "lmf_d3"
+  ],
+  "eq_lf": [
+   "lf_gain",
+   "lf_freq",
+   "lf_bell"
+  ],
+  "comp": [
+   "dyn_in",
+   "comp_thr",
+   "comp_ratio",
+   "comp_attack",
+   "comp_release",
+   "makeup",
+   "dyn_pos",
+   "sc_src"
+  ],
+  "gate": [
+   "gate_in",
+   "gate_mode",
+   "gate_thr",
+   "gate_range",
+   "gate_hold",
+   "gate_release",
+   "gate_fast"
+  ],
+  "output": [
+   "out_gain",
+   "vu_src"
+  ],
+  "meters": [
+   "vu",
+   "gr",
+   "gate_gr"
+  ]
+ }
+}

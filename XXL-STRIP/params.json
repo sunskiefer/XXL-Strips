@@ -1,0 +1,380 @@
+{
+ "name": "XXL STRIP",
+ "params": [
+  {
+   "key": "in_gain",
+   "name": "INPUT",
+   "min": -20.0,
+   "max": 20.0,
+   "default": 0.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "phase",
+   "name": "PHASE",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0
+  },
+  {
+   "key": "model",
+   "name": "MODEL",
+   "options": [
+    "E Brown",
+    "E Black",
+    "G"
+   ],
+   "default": 1,
+   "refresh_display": true
+  },
+  {
+   "key": "drive",
+   "name": "DRIVE",
+   "min": 0.0,
+   "max": 100.0,
+   "default": 0.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "os",
+   "name": "OVERSMP",
+   "options": [
+    "1x",
+    "2x"
+   ],
+   "default": 0
+  },
+  {
+   "key": "hpf_in",
+   "name": "HPF",
+   "options": [
+    "Out",
+    "In"
+   ],
+   "default": 0
+  },
+  {
+   "key": "hpf_freq",
+   "name": "HPF FRQ",
+   "min": 16.0,
+   "max": 390.0,
+   "default": 16.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "lpf_in",
+   "name": "LPF",
+   "options": [
+    "Out",
+    "In"
+   ],
+   "default": 0
+  },
+  {
+   "key": "lpf_freq",
+   "name": "LPF FRQ",
+   "min": 3200.0,
+   "max": 22000.0,
+   "default": 22000.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "eq_in",
+   "name": "EQ",
+   "options": [
+    "Out",
+    "In"
+   ],
+   "default": 1
+  },
+  {
+   "key": "hf_gain",
+   "name": "HF GAIN",
+   "min": -18.0,
+   "max": 18.0,
+   "default": 0.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "hf_freq",
+   "name": "HF FRQ",
+   "min": 1300.0,
+   "max": 19000.0,
+   "default": 8000.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "hf_bell",
+   "name": "HF SHAPE",
+   "options": [
+    "Shelf",
+    "Bell"
+   ],
+   "default": 0
+  },
+  {
+   "key": "hmf_gain",
+   "name": "HMF GAIN",
+   "min": -18.0,
+   "max": 18.0,
+   "default": 0.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "hmf_freq",
+   "name": "HMF FRQ",
+   "min": 640.0,
+   "max": 9400.0,
+   "default": 3000.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "hmf_q",
+   "name": "HMF Q",
+   "min": 0.5,
+   "max": 4.1,
+   "default": 1.5,
+   "dynamic_display": true
+  },
+  {
+   "key": "hmf_x3",
+   "name": "HMF x3",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0
+  },
+  {
+   "key": "lmf_gain",
+   "name": "LMF GAIN",
+   "min": -18.0,
+   "max": 18.0,
+   "default": 0.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "lmf_freq",
+   "name": "LMF FRQ",
+   "min": 140.0,
+   "max": 2000.0,
+   "default": 600.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "lmf_q",
+   "name": "LMF Q",
+   "min": 0.5,
+   "max": 4.2,
+   "default": 1.5,
+   "dynamic_display": true
+  },
+  {
+   "key": "lmf_d3",
+   "name": "LMF /3",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0
+  },
+  {
+   "key": "lf_gain",
+   "name": "LF GAIN",
+   "min": -18.0,
+   "max": 18.0,
+   "default": 0.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "lf_freq",
+   "name": "LF FRQ",
+   "min": 37.0,
+   "max": 420.0,
+   "default": 100.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "lf_bell",
+   "name": "LF SHAPE",
+   "options": [
+    "Shelf",
+    "Bell"
+   ],
+   "default": 0
+  },
+  {
+   "key": "dyn_in",
+   "name": "DYNAMICS",
+   "options": [
+    "Out",
+    "In"
+   ],
+   "default": 1
+  },
+  {
+   "key": "comp_thr",
+   "name": "THRESH",
+   "min": -20.0,
+   "max": 10.0,
+   "default": 10.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "comp_ratio",
+   "name": "RATIO",
+   "min": 1.0,
+   "max": 20.0,
+   "default": 5.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "comp_attack",
+   "name": "ATTACK",
+   "options": [
+    "Auto",
+    "Fast"
+   ],
+   "default": 0
+  },
+  {
+   "key": "comp_release",
+   "name": "RELEASE",
+   "min": 0.1,
+   "max": 4.0,
+   "default": 0.1,
+   "dynamic_display": true
+  },
+  {
+   "key": "makeup",
+   "name": "MAKE-UP",
+   "options": [
+    "Off",
+    "Auto"
+   ],
+   "default": 0
+  },
+  {
+   "key": "dyn_pos",
+   "name": "POSITION",
+   "options": [
+    "Pre EQ",
+    "Post EQ"
+   ],
+   "default": 0
+  },
+  {
+   "key": "sc_src",
+   "name": "SIDECHN",
+   "options": [
+    "Input",
+    "Filters",
+    "EQ"
+   ],
+   "default": 0
+  },
+  {
+   "key": "gate_in",
+   "name": "GATE",
+   "options": [
+    "Out",
+    "In"
+   ],
+   "default": 0
+  },
+  {
+   "key": "gate_mode",
+   "name": "MODE",
+   "options": [
+    "Expand",
+    "Gate"
+   ],
+   "default": 0
+  },
+  {
+   "key": "gate_thr",
+   "name": "THRESH",
+   "min": -30.0,
+   "max": 10.0,
+   "default": -30.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "gate_range",
+   "name": "RANGE",
+   "min": 0.0,
+   "max": 40.0,
+   "default": 20.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "gate_hold",
+   "name": "HOLD",
+   "min": 0.0,
+   "max": 4.0,
+   "default": 0.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "gate_release",
+   "name": "RELEASE",
+   "min": 0.1,
+   "max": 4.0,
+   "default": 0.3,
+   "dynamic_display": true
+  },
+  {
+   "key": "gate_fast",
+   "name": "FAST ATT",
+   "options": [
+    "Off",
+    "On"
+   ],
+   "default": 0
+  },
+  {
+   "key": "out_gain",
+   "name": "OUTPUT",
+   "min": -20.0,
+   "max": 20.0,
+   "default": 0.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "vu_src",
+   "name": "VU SHOWS",
+   "options": [
+    "Output",
+    "Input",
+    "Gain Red"
+   ],
+   "default": 0
+  },
+  {
+   "key": "vu",
+   "name": "VU",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "gr",
+   "name": "GAIN RED",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "gate_gr",
+   "name": "GATE RED",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "dynamic_display": true
+  }
+ ]
+}

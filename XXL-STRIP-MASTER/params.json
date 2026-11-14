@@ -1,0 +1,189 @@
+{
+ "name": "XXL STRIP MASTER",
+ "params": [
+  {
+   "key": "in_gain",
+   "name": "INPUT",
+   "min": -12.0,
+   "max": 12.0,
+   "default": 0.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "hpf",
+   "name": "HPF",
+   "options": [
+    "Off",
+    "30 Hz",
+    "40 Hz",
+    "50 Hz"
+   ],
+   "default": 0
+  },
+  {
+   "key": "drive_in",
+   "name": "DRIVE",
+   "options": [
+    "Out",
+    "In"
+   ],
+   "default": 0
+  },
+  {
+   "key": "drive",
+   "name": "DRIVE",
+   "min": 0.0,
+   "max": 10.0,
+   "default": 3.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "density",
+   "name": "DENSITY",
+   "min": 0.0,
+   "max": 10.0,
+   "default": 5.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "eq_in",
+   "name": "EQ",
+   "options": [
+    "Out",
+    "In"
+   ],
+   "default": 0
+  },
+  {
+   "key": "lf_gain",
+   "name": "LF GAIN",
+   "min": -9.0,
+   "max": 9.0,
+   "default": 0.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "lf_freq",
+   "name": "LF FRQ",
+   "options": [
+    "30",
+    "50",
+    "70",
+    "90"
+   ],
+   "default": 1
+  },
+  {
+   "key": "hf_gain",
+   "name": "HF GAIN",
+   "min": -9.0,
+   "max": 9.0,
+   "default": 0.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "hf_freq",
+   "name": "HF FRQ",
+   "options": [
+    "8k",
+    "12k",
+    "16k",
+    "20k"
+   ],
+   "default": 1
+  },
+  {
+   "key": "hfc_in",
+   "name": "HF COMP",
+   "options": [
+    "Out",
+    "In"
+   ],
+   "default": 0
+  },
+  {
+   "key": "hfc_thr",
+   "name": "THRESH",
+   "min": -10.0,
+   "max": 2.0,
+   "default": 0.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "hfc_xover",
+   "name": "X-OVER",
+   "min": 3000.0,
+   "max": 20000.0,
+   "default": 8000.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "img_in",
+   "name": "IMAGE",
+   "options": [
+    "Out",
+    "In"
+   ],
+   "default": 0
+  },
+  {
+   "key": "width",
+   "name": "WIDTH",
+   "min": -4.0,
+   "max": 4.0,
+   "default": 0.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "space",
+   "name": "SPACE",
+   "min": -4.0,
+   "max": 4.0,
+   "default": 0.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "trafo",
+   "name": "TRANSF",
+   "options": [
+    "Out",
+    "In"
+   ],
+   "default": 0
+  },
+  {
+   "key": "out_gain",
+   "name": "OUTPUT",
+   "min": -12.0,
+   "max": 12.0,
+   "default": 0.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "vu_src",
+   "name": "VU SHOWS",
+   "options": [
+    "Output",
+    "Input",
+    "HF Red"
+   ],
+   "default": 0
+  },
+  {
+   "key": "vu",
+   "name": "VU",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "dynamic_display": true
+  },
+  {
+   "key": "gr",
+   "name": "HF RED",
+   "min": 0.0,
+   "max": 1.0,
+   "default": 0.0,
+   "dynamic_display": true
+  }
+ ]
+}
