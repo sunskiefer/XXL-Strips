@@ -46,9 +46,9 @@ VU_FRAMES = 64
 
 
 def vu_face_and_needles(w, h):
-    """the user's VU dial art (art/user/vu_face_v2.png, no needle, used as it is) with VU_FRAMES needle positions drawn
+    """the user's VU dial art (art/user/vu_face.png, no needle, used as it is) with VU_FRAMES needle positions drawn
     on it (w x h px). Geometry measured from the art: see pro_lib.VU_PIVOT."""
-    art = Image.open(os.path.join(ROOT, "art", "user", "vu_face_v2.png")).convert("RGB")
+    art = Image.open(os.path.join(ROOT, "art", "user", "vu_face.png")).convert("RGB")
     aw, ah = art.size
     S = 4
     big = art.resize((aw * S, ah * S), Image.LANCZOS)

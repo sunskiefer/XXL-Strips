@@ -1,5 +1,5 @@
-# Publishes the GitHub releases of the XXL set from the release zips in releases/ (the same files that were built and
-# tested as ARM code). Runs when releases/ changes on main, or by hand. One release per plugin.
+# Publishes the single release of the XXL set (all four plugins) from the zips in releases/, the same files that were
+# built and tested as ARM code. Runs when releases/ changes on main, or by hand.
 name: release
 on:
   push:
@@ -11,26 +11,29 @@ permissions:
 jobs:
   publish:
     runs-on: ubuntu-24.04
-    strategy:
-      fail-fast: false
-      max-parallel: 1
-      matrix:
-        include:
-          - { file: "XXL-STRIP-0.1.1-mpc-armv7.zip", tag: "xxl-strip-v0.1.1", name: "XXL STRIP 0.1.1", latest: "false" }
-          - { file: "XXL-STRIP-BUS-0.1.1-mpc-armv7.zip", tag: "xxl-strip-bus-v0.1.1", name: "XXL STRIP BUS 0.1.1", latest: "false" }
-          - { file: "XXL-STRIP-MASTER-0.1.1-mpc-armv7.zip", tag: "xxl-strip-master-v0.1.1", name: "XXL STRIP MASTER 0.1.1", latest: "false" }
-          - { file: "XXL-Pro-0.1.0-mpc-armv7.zip", tag: "xxl-pro-v0.1.0", name: "XXL Pro 0.1.0", latest: "true" }
+    env:
+      GH_TOKEN: ${{ github.token }}
     steps:
       - uses: actions/checkout@v4
-      - name: Check the zip against its recorded sum
-        run: cd releases && grep " ${{ matrix.file }}$" SHA256SUMS.txt | sha256sum -c -
+      - name: Check every zip against its recorded sum
+        run: cd releases && sha256sum -c SHA256SUMS.txt
+      - name: Remove the earlier per-plugin releases and tags
+        run: |
+          for t in xxl-pro-v0.1.0 xxl-strip-v0.1.1 xxl-strip-bus-v0.1.1 xxl-strip-master-v0.1.1; do
+            gh release delete "$t" --cleanup-tag --yes --repo "$GITHUB_REPOSITORY" || true
+          done
       - name: Publish
         uses: softprops/action-gh-release@v2
         with:
-          tag_name: ${{ matrix.tag }}
+          tag_name: xxl-v0.1
           target_commitish: ${{ github.sha }}
-          name: ${{ matrix.name }}
-          body_path: docs/notes/${{ matrix.tag }}.md
+          name: XXL set 0.1
+          body_path: docs/notes/xxl-v0.1.md
           prerelease: false
-          make_latest: ${{ matrix.latest }}
-          files: releases/${{ matrix.file }}
+          make_latest: true
+          files: |
+            releases/XXL-Pro-0.1.0-mpc-armv7.zip
+            releases/XXL-STRIP-0.1.1-mpc-armv7.zip
+            releases/XXL-STRIP-BUS-0.1.1-mpc-armv7.zip
+            releases/XXL-STRIP-MASTER-0.1.1-mpc-armv7.zip
+            releases/SHA256SUMS.txt

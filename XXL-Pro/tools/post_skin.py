@@ -177,13 +177,13 @@ VU_N = 32      # needle positions of the VU dial (parameter m_vu)
 VU_W, VU_H = 340, 166
 
 
-VU_ART = (379, 185)                 # the user's VU face (art/user/vu_face_v2.png): no needle, used as it is
+VU_ART = (379, 185)                 # the user's VU face (art/user/vu_face.png): no needle, used as it is
 VU_PIVOT, VU_TIP, VU_BASE_Y = (190.3, 254.9), 205.0, 184.0   # measured from the art: its arc is r 208.3 about this pivot, -48..+48 degrees
 
 
 def vu_face(w, h):
     """the user's VU dial art, as given (only scaled to the size asked)"""
-    art = Image.open(os.path.join(ROOT, "art", "user", "vu_face_v2.png")).convert("RGBA")
+    art = Image.open(os.path.join(ROOT, "art", "user", "vu_face.png")).convert("RGBA")
     return art if (w, h) == art.size else art.resize((w, h), Image.LANCZOS)
 
 
